@@ -1,0 +1,11 @@
+@import "../../../styles/variables.scss";
+
+@import "../../../styles/templates/btnAddRemove.scss";
+
+.btnLightGrey {
+
+    @extend %btn;
+    color: $black;
+    background-color: $bg-main;
+
+}

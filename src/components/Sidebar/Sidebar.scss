@@ -1,0 +1,47 @@
+@import "../../styles/variables.scss";
+
+
+.sidebarContainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    width: 100%;
+    border-radius: 15px;
+    padding: 25px;
+    background-color: $bg-container;
+
+    .cards {
+        font-size: $fs20;
+        color: $light-gray;
+    }
+    .showAll {
+        font-size: $fs17;
+        color: $purple;
+    }
+
+    .sidebarOptions {
+        display: flex;
+        flex-direction: column;
+        row-gap: 25px;
+        font-size: $fs18;
+        color: $black;
+        font-weight: 700;
+    }
+    .sidebarOptions {
+        li {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+
+    .buttons {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        
+    }
+}
+
+

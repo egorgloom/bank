@@ -1,0 +1,19 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/templates/btnAddRemove.scss";
+
+.ButtonPurple {
+    background-color: $purple;
+    color: $bg-container;
+
+    @extend %btn;
+
+    &:hover {
+        background-color: $purple-hover;
+    }
+    .icon {
+        font-size: $fs24;
+        display: flex;
+        align-items: center;
+    }
+
+}

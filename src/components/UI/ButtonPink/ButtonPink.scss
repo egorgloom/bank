@@ -1,0 +1,22 @@
+@import "../../../styles/variables.scss";
+
+@import "../../../styles/templates/btnAddRemove.scss";
+
+
+
+.buttonPink {
+    color: $remove-color;
+    background-color: $remove;
+    @extend %btn;
+
+    &:hover {
+        background-color: $remove-hover;
+    }
+
+    .icon {
+        font-size: $fs18;
+        display: flex;
+        align-items: center;
+    }
+
+}
