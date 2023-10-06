@@ -1,0 +1,50 @@
+@import "../../styles/variables.scss";
+
+.referralContainer {
+    width: 40%;
+    background-color: $black;
+    background-image: url('../../assets/people.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    min-height: 220px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+
+    p {
+        margin-top: auto;
+        font-size: $fs17;
+        color: $light-gray;
+    }
+
+    .referralLink{
+        background-color: $dark-grey;
+        border-radius: 30px;
+
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 5px 5px 5px 20px;
+            color: $light-gray;
+            font-weight: 500;
+            font-size: $fs18;
+
+            span {
+                text-transform: uppercase;
+            }
+
+            div {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                background-color: $black;
+                padding: 10px;
+                border-radius: 20px;
+
+            }
+        }
+    }
+}

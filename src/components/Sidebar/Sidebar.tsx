@@ -14,6 +14,7 @@ import ButtonPink from '../UI/ButtonPink/ButtonPink';
 
 import Card from '../Card/Card';
 import BtnSidebar from './../UI/BtnSidebar/BtnSidebar';
+import ButtonPurpleSmall from '../UI/ButtonPurpleSmall/ButtonPurpleSmall';
 
 
 
@@ -27,7 +28,7 @@ const Sidebar: FC<ISidebar> = () => {
             <div className="sidebarContainer">
                 <div className='flex-between'>
                     <span className="cards">Cards</span>
-                    <span className="showAll">Show all</span>
+                    <ButtonPurpleSmall title='Show All'/>
                 </div>
                 <Card />
                 <ul className="sidebarOptions">

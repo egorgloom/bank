@@ -12,7 +12,7 @@ const ButtonPurple: FC<IButtonPurple> = ({children, title, icon}) => {
   return (
     <button type="button" className="ButtonPurple">
         {children}
-        {title}<span className='icon'>{icon}</span>
+        {title}<span>{icon}</span>
     </button>
   );
 };

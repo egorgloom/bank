@@ -8,4 +8,14 @@
     color: $black;
     background-color: $bg-main;
 
+    span {
+        font-size: $fs18;
+        display: flex;
+        align-items: center;
+    }
+
+    &:hover {
+        background-color: $light-gray;
+    }
+
 }

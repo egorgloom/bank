@@ -1,0 +1,33 @@
+@import "../../../styles//variables.scss";
+
+.btnDashedContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    row-gap: 10px;
+    color: $purple;
+    font-weight: 600;
+    height: 100%;
+
+    .btnDashed {
+        background-color: transparent;
+        border: 2px dashed $purple;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        font-size: $fs24;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $purple;
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    
+}
