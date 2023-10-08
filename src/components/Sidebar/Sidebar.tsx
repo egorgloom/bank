@@ -1,6 +1,6 @@
 import { FC } from 'react';
 
-import './Sidebar.scss';
+import styles from './Sidebar.module.scss';
 
 import { FaWallet } from 'react-icons/fa'
 import { RxBorderDotted } from 'react-icons/rx'
@@ -9,12 +9,12 @@ import { BiEditAlt } from 'react-icons/bi'
 import { HiMinus, HiPlus } from 'react-icons/hi'
 
 
-import ButtonPurple from '../UI/ButtonPurple/ButtonPurple';
-import ButtonPink from '../UI/ButtonPink/ButtonPink';
+import Button from '../UI/Button/Button';
+
 
 import Card from '../Card/Card';
 import BtnSidebar from './../UI/BtnSidebar/BtnSidebar';
-import ButtonPurpleSmall from '../UI/ButtonPurpleSmall/ButtonPurpleSmall';
+
 
 
 
@@ -25,13 +25,13 @@ interface ISidebar {
 const Sidebar: FC<ISidebar> = () => {
     return (
         <>
-            <div className="sidebarContainer">
+            <div className={styles.sidebarContainer}>
                 <div className='flex-between'>
-                    <span className="cards">Cards</span>
-                    <ButtonPurpleSmall title='Show All'/>
+                    <span className={styles.cards}>Cards</span>
+                    <Button title='Show All' color='smallPurple'/>
                 </div>
                 <Card />
-                <ul className="sidebarOptions">
+                <ul className={styles.sidebarOptions}>
                     <li>
                         <BtnSidebar 
                         title='Show Card Details' 
@@ -54,9 +54,9 @@ const Sidebar: FC<ISidebar> = () => {
 
                     </li>
                 </ul>
-                <div className='buttons'>
-                    <ButtonPurple title='Add Card' icon={<HiPlus />}/>
-                    <ButtonPink title='Remove' icon={<HiMinus />}/>
+                <div className={styles.buttons}>
+                    <Button title='Add Card' icon={<HiPlus />} color='purple'/>
+                    <Button title='Remove' icon={<HiMinus />} color='pink'/>
                 </div>
             </div>
 

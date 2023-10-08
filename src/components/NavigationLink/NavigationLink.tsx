@@ -1,6 +1,6 @@
 import { FC } from 'react';
 
-import './NavigationLink.scss';
+import styles from './NavigationLink.module.scss';
 
 import { NavLink } from "react-router-dom";
 
@@ -8,8 +8,8 @@ interface INavigationLink { }
 
 const NavigationLink: FC<INavigationLink> = () => {
     return (
-        <nav className="navContainer">
-            <ul className="navLink">
+        <nav className={styles.navContainer}>
+            <ul className={styles.navLink}>
                 <li>
                     <NavLink to={'/summary'}
                         style={({ isActive }) => ({

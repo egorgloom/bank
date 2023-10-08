@@ -2,27 +2,28 @@ import { FC } from 'react';
 
 
 import BtnDashed from '../UI/BtnDashed/BtnDashed';
-import ButtonPurpleSmall from '../UI/ButtonPurpleSmall/ButtonPurpleSmall';
+import Button from '../UI/Button/Button';
 
 import { HiPlus } from 'react-icons/hi'
 
-import './RecentContacts.scss'
+import styles from './RecentContacts.module.scss'
+
 import LastUser from '../LastUser/LastUser';
 
 interface IRecentContacts { }
 
 const RecentContacts: FC<IRecentContacts> = () => {
     return (
-        <div className='recentContainer'>
+        <div className={styles.recentContainer}>
             <div className='flex-between'>
-                <span className='recent'>Recent Contacts</span>
-                <ButtonPurpleSmall title='All Contacts' />
+                <span className={styles.recent}>Recent Contacts</span>
+                <Button title='All Contacts' color='smallPurple'/>
             </div>
-            <div className='lastUsers'>
+            <div className={styles.lastUsers}>
                 <div>
                     <BtnDashed icon={<HiPlus />} title='Add' />
                 </div>
-                <div className='lastUserList'>
+                <div className={styles.lastUserList}>
                    <LastUser />
                    <LastUser />
                    <LastUser />
