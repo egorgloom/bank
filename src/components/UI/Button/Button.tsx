@@ -7,11 +7,9 @@ import styles from './Button.module.scss';
 
 interface IButton  {
     children?: React.ReactNode,
-    title: string,
+    title?: string,
     icon?: React.ReactNode,
-    // style? : React.CSSProperties,
     color : 'purple' | 'pink' | 'gray' | 'smallPurple',
-
 }
 
 const Button: FC<IButton> = ({color, children, ...props}) => {
@@ -22,9 +20,6 @@ const Button: FC<IButton> = ({color, children, ...props}) => {
     gray: styles.gray,
     smallPurple: styles.smallPurple,
   }
-
-
-
 
   return (
     <button {...props} className={clsx(styles.ButtonPurple, colorTheme[color])}>

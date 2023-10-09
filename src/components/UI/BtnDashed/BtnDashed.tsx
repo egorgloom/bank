@@ -1,22 +1,31 @@
+import { clsx } from 'clsx';
+
 import React, { FC } from 'react';
 
-import './BtnDashed.scss'
+import styles from './BtnDashed.module.scss';
+
 
 interface IBtnDashed {
     children?: React.ReactNode,
     title?: string,
     icon?: React.ReactNode,
+    color: 'black' | 'dashed',
 
 }
 
-const BtnDashed: FC<IBtnDashed> = ({ children, icon, title }) => {
+const BtnDashed: FC<IBtnDashed> = ({ color, children, ...props}) => {
+
+    const colorTheme = {
+    dashed: styles.btnDashed,
+    black: styles.black,
+}
     return (
-        <div className='btnDashedContainer'>
-            <button className='btnDashed'>
+        <div className={styles.btnDashedContainer}>
+            <button className={clsx(styles.btnDashed, colorTheme[color])} {...props}>
                 {children}
-                {icon}
+                {props.icon}
             </button>
-            {title}
+            {props.title}
         </div>
     );
 };

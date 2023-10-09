@@ -1,44 +1,48 @@
 @import "../../styles/variables.scss";
 
-
-.sidebarContainer {
+.sidebarWrapper {
     display: flex;
     flex-direction: column;
-    row-gap: 30px;
-    width: 100%;
-    border-radius: 15px;
-    padding: 25px;
-    background-color: $bg-container;
+    gap: 20px;
 
-    .cards {
-        font-size: $fs20;
-        color: $light-gray;
-    }
-
-    .sidebarOptions {
+    .sidebarContainer {
         display: flex;
         flex-direction: column;
-        row-gap: 25px;
-        font-size: $fs18;
-        color: $black;
-        font-weight: 700;
-    }
-    .sidebarOptions {
-        li {
+        row-gap: 30px;
+        width: 100%;
+        border-radius: 15px;
+        padding: 25px;
+        background-color: $bg-container;
+
+        .cards {
+            font-size: $fs20;
+            color: $light-gray;
+        }
+
+        .sidebarOptions {
             display: flex;
-            align-items: center;
+            flex-direction: column;
+            row-gap: 25px;
+            font-size: $fs18;
+            color: $black;
+            font-weight: 700;
+        }
+
+        .sidebarOptions {
+            li {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                cursor: pointer;
+            }
+        }
+
+        .buttons {
+            margin-top: 20px;
+            display: flex;
             justify-content: space-between;
-            cursor: pointer;
+            gap: 20px;
+
         }
     }
-
-    .buttons {
-        margin-top: 20px;
-        display: flex;
-        justify-content: space-between;
-        gap: 20px;
-        
-    }
 }
-
-

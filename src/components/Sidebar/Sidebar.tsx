@@ -8,12 +8,11 @@ import { BiLockOpen } from 'react-icons/bi'
 import { BiEditAlt } from 'react-icons/bi'
 import { HiMinus, HiPlus } from 'react-icons/hi'
 
-
+import BtnSidebar from './../UI/BtnSidebar/BtnSidebar';
 import Button from '../UI/Button/Button';
 
-
 import Card from '../Card/Card';
-import BtnSidebar from './../UI/BtnSidebar/BtnSidebar';
+import GetMoney from '../GetMoney/GetMoney';
 
 
 
@@ -24,7 +23,7 @@ interface ISidebar {
 
 const Sidebar: FC<ISidebar> = () => {
     return (
-        <>
+        <div className={styles.sidebarWrapper}>
             <div className={styles.sidebarContainer}>
                 <div className='flex-between'>
                     <span className={styles.cards}>Cards</span>
@@ -59,8 +58,9 @@ const Sidebar: FC<ISidebar> = () => {
                     <Button title='Remove' icon={<HiMinus />} color='pink'/>
                 </div>
             </div>
+            <GetMoney />
 
-        </>
+        </div>
 
 
     );

@@ -4,22 +4,24 @@ import styles from './TotalBalance.module.scss'
 
 import Button from './../UI/Button/Button';
 
-
 import { HiArrowDown, HiArrowUp } from 'react-icons/hi';
 import { HiPlus } from 'react-icons/hi'
 
-
-
-
 interface IBalance {
-
 }
 
 const Balance: FC<IBalance> = () => {
 
   let number = 29475
 
-  const val = Intl.NumberFormat('de-DE', { style: 'currency', currency: 'USD' }).format(number);
+  const val = new Intl.NumberFormat('de-DE', { 
+    style: 'currency',
+    currency: 'USD', 
+    currencyDisplay: "code" 
+  })
+  .format(number)
+  .replace("USD", "")
+  .trim()
 
   return (
     <div className={styles.balanceContainer}>

@@ -16,8 +16,8 @@
 
     background-color: $purple;
     color: $bg-container;
-    padding: 10px 25px;
-    width: 100%;
+    padding: 15px 20px;
+    width: calc(50%);
 
 
     &:hover {
@@ -30,8 +30,8 @@
 
     color: $remove-color;
     background-color: $remove;
-    padding: 10px 25px;
-    width: 100%;
+    padding: 15px 20px;
+    width: calc(50%);
 
     &:hover {
         background-color: $remove-hover;
@@ -42,8 +42,8 @@
 .gray {
     color: $black;
     background-color: $bg-main;
-    padding: 10px 25px;
-    width: 100%;
+    padding: 15px 20px;
+    width: calc(50%);
 
     &:hover {
         background-color: $light-gray;
