@@ -8,6 +8,7 @@ import Sidebar from './components/Sidebar/Sidebar';
 import TotalBalance from './components/TotalBalance/TotalBalance';
 import ReferralLink from './components/ReferralLink/ReferralLink';
 import RecentContacts from './components/RecentContacts/RecentContacts';
+import TransactionsHistory from './components/TransactionsHistory/TransactionsHistory';
 
 
 
@@ -27,6 +28,7 @@ function App() {
             <ReferralLink />
           </div>
           <RecentContacts />
+          <TransactionsHistory />
 
         </div>
       </div>

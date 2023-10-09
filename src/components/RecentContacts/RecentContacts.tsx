@@ -21,7 +21,7 @@ const RecentContacts: FC<IRecentContacts> = () => {
             </div>
             <div className={styles.lastUsers}>
                 <div>
-                    <BtnDashed icon={<HiPlus />} title='Add' />
+                    <BtnDashed icon={<HiPlus />} title='Add' color='dashed'/>
                 </div>
                 <div className={styles.lastUserList}>
                    <LastUser />

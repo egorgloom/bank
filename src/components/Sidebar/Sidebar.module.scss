@@ -43,6 +43,15 @@
             justify-content: space-between;
             gap: 20px;
 
+            .btna {
+                
+                background-color: $purple;
+                border-radius: 20px;
+                color: $bg-container;
+                font-size: $fs18;
+                padding: 15px 20px;
+                
+            }
         }
     }
 }

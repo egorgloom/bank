@@ -56,6 +56,12 @@ const Sidebar: FC<ISidebar> = () => {
                 <div className={styles.buttons}>
                     <Button title='Add Card' icon={<HiPlus />} color='purple'/>
                     <Button title='Remove' icon={<HiMinus />} color='pink'/>
+                    {/* <button className={styles.btna}>
+                        abc
+                    </button>
+                    <button className={styles.btna}>
+                        abc
+                    </button> */}
                 </div>
             </div>
             <GetMoney />

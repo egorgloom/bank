@@ -3,6 +3,7 @@
 
 .ButtonPurple {
     @extend %btn;
+    // white-space: pre;
     span {
         font-size: $fs18;
         display: flex;
@@ -17,7 +18,7 @@
     background-color: $purple;
     color: $bg-container;
     padding: 15px 20px;
-    width: calc(50%);
+    width: calc(100%);
 
 
     &:hover {
@@ -31,7 +32,9 @@
     color: $remove-color;
     background-color: $remove;
     padding: 15px 20px;
-    width: calc(50%);
+    width: calc(100%);
+
+
 
     &:hover {
         background-color: $remove-hover;
@@ -43,7 +46,9 @@
     color: $black;
     background-color: $bg-main;
     padding: 15px 20px;
-    width: calc(50%);
+    width: calc(100%);
+
+
 
     &:hover {
         background-color: $light-gray;

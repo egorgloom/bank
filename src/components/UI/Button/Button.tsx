@@ -24,7 +24,8 @@ const Button: FC<IButton> = ({color, children, ...props}) => {
   return (
     <button {...props} className={clsx(styles.ButtonPurple, colorTheme[color])}>
         {children}
-        <p >{props.title}</p> <span>{props.icon}</span>
+        {props.title}
+        {props.icon}
     </button>
   );
 };

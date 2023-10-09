@@ -19,32 +19,5 @@
         color: $light-gray;
     }
 
-    .referralLink{
-        background-color: $dark-grey;
-        border-radius: 30px;
-
-        a {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 5px 5px 5px 20px;
-            color: $light-gray;
-            font-weight: 500;
-            font-size: $fs18;
-
-            span {
-                text-transform: uppercase;
-            }
-
-            div {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                background-color: $black;
-                padding: 10px;
-                border-radius: 20px;
-
-            }
-        }
-    }
 }
+
